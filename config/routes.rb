@@ -1,3 +1,5 @@
 TimePress::Application.routes.draw do
-  root :to => "home#index"
+
+  root :to => "run_stamps#new"
+  resources :run_stamps
 end
