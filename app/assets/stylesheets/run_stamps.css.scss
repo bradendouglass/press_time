@@ -1,0 +1,78 @@
+// Place all the styles related to the RunStamps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.goButton {
+  border-top: 1px solid #caf797;
+  background: #65d69f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#439c3e), to(#65d69f));
+  background: -webkit-linear-gradient(top, #439c3e, #65d69f);
+  background: -moz-linear-gradient(top, #439c3e, #65d69f);
+  background: -ms-linear-gradient(top, #439c3e, #65d69f);
+  background: -o-linear-gradient(top, #439c3e, #65d69f);
+  padding: 7px 14px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  vertical-align: middle;
+
+
+  &:hover {
+    border-top-color: #287841;
+    background: #287841;
+    color: #ccc;
+
+  }
+  &:active {
+    border-top-color: #2d5c1b;
+    background: #2d5c1b;
+
+  }
+}
+
+.stopButton {
+  border-top: 1px solid #f59898;
+  background: #d4656f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9c3e4e), to(#d4656f));
+  background: -webkit-linear-gradient(top, #9c3e4e, #d4656f);
+  background: -moz-linear-gradient(top, #9c3e4e, #d4656f);
+  background: -ms-linear-gradient(top, #9c3e4e, #d4656f);
+  background: -o-linear-gradient(top, #9c3e4e, #d4656f);
+  padding: 7px 14px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 16px;
+  font-family: Georgia, Serif;
+  text-decoration: none;
+  vertical-align: middle;
+
+
+  &:hover {
+    border-top-color: #782929;
+    background: #782929;
+    color: #ccc;
+
+  }
+  &:active {
+    border-top-color: #5c1b29;
+    background: #5c1b29;
+  }
+}
+
+.hidden{
+  display: none;
+}

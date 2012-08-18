@@ -1,0 +1,9 @@
+%fieldset
+  =form_for @run_stamp do |f|
+    =f.label :jobNumber, "Job Number"
+    =f.text_field :jobNumber
+    %br
+    =f.text_field :timeStart
+    =link_to "Start Press", '#', :remote => true, :id => 'startPress'
+    =f.submit "Stop Press", :id => "stopPress", :class => "hidden"
+

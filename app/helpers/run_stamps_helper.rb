@@ -1,0 +1,2 @@
+module RunStampsHelper
+end

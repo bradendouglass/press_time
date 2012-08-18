@@ -1,0 +1,18 @@
+%h1 RunStamps#index
+%p Find me in app/views/run_stamps/index.html.haml
+
+%table
+  %thead
+    %tr
+      %th Id
+      %th Job Number
+      %th Time Start
+      %th Time Stop
+  %tbody
+    -@run_stamps.each do |stamp|
+      %tr
+        %td= stamp.id
+        %td= stamp.jobNumber
+        %td= stamp.timeStart
+        %td= stamp.timeStop
+
