@@ -10,6 +10,7 @@ end
 
 group :test do
   gem 'cucumber-rails', :require => false
+  gem 'capybara-webkit'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'fabrication'
@@ -18,8 +19,8 @@ end
 group :development do
   gem 'sextant'
   gem 'pry-rails'
-  gem "haml-rails"
+  gem 'haml-rails'
 end
 
 gem 'jquery-rails'
-gem "haml"
+gem 'haml'
