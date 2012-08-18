@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120814135451) do
+ActiveRecord::Schema.define(:version => 20120817175528) do
 
   create_table "run_stamps", :force => true do |t|
     t.integer  "userId"
-    t.time     "timeStart"
-    t.time     "timeStop"
+    t.integer  "timeStart"
+    t.integer  "timeStop"
     t.string   "jobNumber"
     t.string   "reason"
     t.datetime "created_at", :null => false
