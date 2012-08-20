@@ -23,3 +23,9 @@ Feature: Saving a runstamp through the web interface
     And there exists a unix-time stamp in the "run_stamp_timeStart" field
     And I click the "button" named "Stop Press"
     Then the program warns me profusely
+
+  @javascript
+  Scenario: Saving a timeStamp without a jobNumber
+    When the "Job Number" is set to nil
+    And I click the "button" named "Start Press"
+    Then the Run Stamp isn't saved

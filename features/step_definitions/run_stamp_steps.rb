@@ -33,3 +33,11 @@ Then /^the program warns me profusely$/ do
   RunStamp.count.should == 1
   page.should have_css('header div#flash_error')
 end
+
+When /^the "(.*?)" is set to nil$/ do |field|
+  fill_in(field, :with => '')
+end
+
+Then /^the Run Stamp isn't saved$/ do
+  RunStamp.count.should == 1
+end
