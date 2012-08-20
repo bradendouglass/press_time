@@ -14,6 +14,7 @@ group :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'fabrication'
+  gem 'prickle'
 end
 
 group :development do
