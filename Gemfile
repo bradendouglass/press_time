@@ -21,7 +21,9 @@ group :development do
   gem 'sextant'
   gem 'pry-rails'
   gem 'haml-rails'
+  gem 'capistrano'
 end
 
 gem 'jquery-rails'
 gem 'haml'
+gem 'unicorn'
