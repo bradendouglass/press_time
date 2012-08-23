@@ -107,6 +107,7 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
+    pg (0.14.0)
     polyglot (0.3.3)
     prickle (0.0.6)
       capybara
@@ -205,6 +206,7 @@ DEPENDENCIES
   haml
   haml-rails
   jquery-rails
+  pg
   prickle
   pry-rails
   rails (= 3.2.8)
