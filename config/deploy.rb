@@ -28,9 +28,9 @@ set(:previous_revision) { capture("cd #{current_path}; git rev-parse --short HEA
 
 default_environment["RAILS_ENV"] = 'production'
 
-default_environment["PATH"] = "--"
-default_environment["GEM_HOME"] = "--"
-default_environment["GEM_PATH"] = "--"
+#default_environment["PATH"] = "--"
+#default_environment["GEM_HOME"] = "--"
+#default_environment["GEM_PATH"] = "--"
 default_environment["RUBY_VERSION"] = "ruby-1.9.3-p194"
 
 
