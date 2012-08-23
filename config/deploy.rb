@@ -4,11 +4,11 @@ set :branch, "origin/master"
 set :migrate_target, :current
 set :ssh_options, {:forward_agent => true}
 set :rails_env, "production"
-set :deploy_to, "/home/deployinator/apps/edmpress_time"
+set :deploy_to, "/git/apps/edmpress_time"
 set :normalize_asset_timestamps, false
 
 set :user, "deployinator"
-set :group, "staff"
+set :group, "dev"
 set :use_sudo, false
 
 set :scm, :git
@@ -32,6 +32,7 @@ default_environment["PATH"] = "--"
 default_environment["GEM_HOME"] = "--"
 default_environment["GEM_PATH"] = "--"
 default_environment["RUBY_VERSION"] = "ruby-1.9.3-p194"
+
 
 namespace :deploy do
   desc "Deploy your App"
