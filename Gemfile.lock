@@ -109,8 +109,6 @@ GEM
     nokogiri (1.5.5)
     pg (0.14.0)
     polyglot (0.3.3)
-    prickle (0.0.6)
-      capybara
     pry (0.9.9.6)
       coderay (~> 1.0.5)
       method_source (~> 0.7.1)
@@ -207,7 +205,6 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   pg
-  prickle
   pry-rails
   rails (= 3.2.8)
   rspec-rails
