@@ -3,7 +3,10 @@
     =f.label :jobNumber, "Job Number"
     =f.text_field :jobNumber
     %br
-    =f.text_field :timeStart
+    =f.text_field :timeStart, :class => "hidden"
     =link_to "Start Press", '#', :remote => true, :id => 'startPress'
-    =f.submit "Stop Press", :id => "stopPress", :class => "hidden"
+    %br
+    =f.label :reason, "Stop Reason", :id => 'reason_text', :class => "hidden"
+    =f.select(:reason, RunStamp.halt_reasons, {:include_blank => 'Select One'}, {:class => "hidden"})
+    =f.submit "Stop Press", :id => 'stopPress', :class => "hidden"
 

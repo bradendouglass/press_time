@@ -22,3 +22,7 @@ end
 Then /^the "(.*?)" with a css value of "(.*?)" appears$/ do |object, css|
   page.should have_css(css)
 end
+
+Then /^a drop down list named "(.*?)" appears$/ do |name|
+  page.should have_content(name)
+end

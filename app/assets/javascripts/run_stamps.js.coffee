@@ -11,3 +11,5 @@ $("#startPress").click ->
     $("#runStatus").removeClass('stopButton').addClass('goButton')
     $("#startPress").hide()
     $("#stopPress").removeClass("hidden")
+    $("#reason_text").removeClass("hidden")
+    $("#run_stamp_reason").removeClass("hidden")

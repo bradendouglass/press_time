@@ -11,6 +11,8 @@ Feature: Root of application is new timestamp
   @javascript
   Scenario: User starts the press monitoring software
     Given I am at root
+    And there is a Job Number
     When I click the "button" named "Start Press"
     Then the "button" named "Start Press" dissapears
     And the "button" with a css value of "#stopPress" appears
+    And a drop down list named "Stop Reason" appears
