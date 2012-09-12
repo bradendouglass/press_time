@@ -15,7 +15,7 @@ set :scm, "git"
 set :repository, "git@github.com:bradendouglass/#{application}.git"
 set :branch, "master"
 
-default_run_options[:pty] = true
+default_run_options[:pty] = true # Set for the password prompt for git
 ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
