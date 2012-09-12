@@ -15,8 +15,9 @@ set :scm, "git"
 set :repository, "git@github.com:bradendouglass/#{application}.git"
 set :branch, "master"
 
+# Correct location for rbenv use
 set :default_environment, {
-  "PATH" => "$HOME/.rbenv/bin:$PATH"
+  "PATH" => "/home/#{user}/.rbenv/shims:/home/#{user}/.rbenv/bin:$PATH"
 }
 
 default_run_options[:pty] = true # Set for the password prompt for git
