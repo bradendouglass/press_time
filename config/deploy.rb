@@ -15,6 +15,10 @@ set :scm, "git"
 set :repository, "git@github.com:bradendouglass/#{application}.git"
 set :branch, "master"
 
+set :default_environment, {
+  "PATH" => "$HOME/.rbenv/bin:$PATH"
+}
+
 default_run_options[:pty] = true # Set for the password prompt for git
 ssh_options[:forward_agent] = true
 
