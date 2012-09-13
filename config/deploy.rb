@@ -34,6 +34,7 @@ namespace :deploy do
   end
 
   task :setup_config, roles: :app do
+    sudo "chmod a+x #{current_path}/config/unicorn_ini.sh"
     sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
     sudo "ln -nfs #{current_path}/config/unicorn_ini.sh /etc/init.d/unicorn_#{application}"
     run "mkdir -p #{shared_path}/config"
