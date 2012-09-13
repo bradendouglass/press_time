@@ -15,12 +15,12 @@ ActiveRecord::Schema.define(:version => 20120817175528) do
 
   create_table "run_stamps", :force => true do |t|
     t.integer  "userId"
-    t.integer  "timeStart"
-    t.integer  "timeStop"
     t.string   "jobNumber"
     t.string   "reason"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "timeStart"
+    t.integer  "timeStop"
   end
 
 end
