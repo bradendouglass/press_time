@@ -1,5 +1,4 @@
-%h1 RunStamps#index
-%p Find me in app/views/run_stamps/index.html.haml
+%h1 List of Run Stamps
 
 %table
   %thead
@@ -8,6 +7,7 @@
       %th Job Number
       %th Time Start
       %th Time Stop
+      %th Total Time
   %tbody
     -@run_stamps.each do |stamp|
       %tr
