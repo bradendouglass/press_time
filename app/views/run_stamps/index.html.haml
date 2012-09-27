@@ -13,6 +13,6 @@
       %tr
         %td= stamp.id
         %td= stamp.jobNumber
-        %td= stamp.timeStart
-        %td= stamp.timeStop
+        %td= Time.at(stamp.timeStart).utc.strftime("%I:%M %p - %b %d, %Y")
+        %td= Time.at(stamp.timeStop).utc.strftime("%I:%M %p - %b %d, %Y")
 
