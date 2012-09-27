@@ -32,7 +32,8 @@ class RunStamp < ActiveRecord::Base
     'Re Runs' => '26',
     'Foiling' => '27',
     'Folder' => '28',
-    'In-Line Stripe' => '29'
+    'In-Line Stripe' => '29',
+    'Clean Up' => '30'
     }
   end
 end
