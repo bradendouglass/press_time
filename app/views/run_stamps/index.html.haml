@@ -1,9 +1,8 @@
 %h1 List of Run Stamps
 
-%table
+%table{ :rules => 'all' }
   %thead
     %tr
-      %th Id
       %th Job Number
       %th Time Start
       %th Time Stop
@@ -11,9 +10,8 @@
   %tbody
     -@run_stamps.each do |stamp|
       %tr
-        %td= stamp.id
         %td= stamp.jobNumber
-        %td= Time.at(stamp.timeStart).utc.strftime("%I:%M %p - %b %d, %Y")
-        %td= Time.at(stamp.timeStop).utc.strftime("%I:%M %p - %b %d, %Y")
+        %td= time_at(stamp.timeStart)
+        %td= time_at(stamp.timeStop)
         %td= Time.at(stamp.timeStop - stamp.timeStart).utc.strftime("(%H) hours (%M) min (%S) seconds")
 
