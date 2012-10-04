@@ -1,7 +1,6 @@
 class RunStamp < ActiveRecord::Base
   attr_accessible :jobNumber, :reason, :timeStart, :timeStop, :userId
-  validates :jobNumber,
-    :presence => true
+  validates :jobNumber, :timeStart, :timeStop, :presence => true
 
   private
   def self.halt_reasons
