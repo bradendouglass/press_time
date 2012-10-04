@@ -13,5 +13,5 @@
         %td= stamp.jobNumber
         %td= time_at(stamp.timeStart)
         %td= time_at(stamp.timeStop)
-        %td= Time.at(stamp.timeStop - stamp.timeStart).utc.strftime("(%H) hours (%M) min (%S) seconds")
+        %td= time_diff(stamp.timeStop, stamp.timeStart)
 
