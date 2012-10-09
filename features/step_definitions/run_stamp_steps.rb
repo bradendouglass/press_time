@@ -14,15 +14,14 @@ Then /^a unix\-time stamp is inserted into the "(.*?)" field$/ do |field|
 end
 
 When /^there exists a unix\-time stamp in the "(.*?)" field$/ do |field|
-  fill_in(field, :with => @utime)
-  find_field(field).value == @utime
+  fill_in(field, :with => Time.now.to_i)
 end
 
 Then /^the run_stamp saves successfully$/ do
   current_path.should == root_path
-  test_stamp = RunStamp.last
-  test_stamp.timeStart == @utime
   RunStamp.count.should == 2
+  last_stamp = RunStamp.last
+  last_stamp.timeStart < last_stamp.timeStop
 end
 
 When /^there exists no "(.*?)" in the "(.*?)" field$/ do |name, field|
