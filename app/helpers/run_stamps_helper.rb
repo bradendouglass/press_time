@@ -1,7 +1,7 @@
 module RunStampsHelper
   def time_at(time)
     time = nil_time(time)
-    Time.at(time).utc.strftime("%I:%M %p - %b %d, %Y")
+    Time.at(time).strftime("%I:%M %p - %b %d, %Y")
   end
 
   def time_diff(stopTime, startTime)
