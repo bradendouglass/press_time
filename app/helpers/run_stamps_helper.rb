@@ -8,7 +8,7 @@ module RunStampsHelper
     cleanStart = nil_time(startTime)
     cleanStop = nil_time(stopTime)
     diffTime = cleanStop - cleanStart
-    Time.at(diffTime).utc.strftime("(%H) hours (%M) min (%S) seconds")
+    Time.at(diffTime).strftime("(%H) hours (%M) min (%S) seconds")
   end
 
   def nil_time(time)
