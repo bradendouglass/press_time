@@ -1,15 +1,15 @@
 module RunStampsHelper
   def time_at(time)
     time = nil_time(time)
-    Time.at(time).strftime("%I:%M %p - %b %d, %Y")
+    Time.at(time).asctime
   end
 
   def time_diff(stopTime, startTime)
     cleanStart = nil_time(startTime)
     cleanStop = nil_time(stopTime)
-    diffTime = cleanStop - cleanStart
-    Time.at(diffTime).strftime("(%H) hours (%M) min (%S) seconds")
+    "#{ cleanStop - cleanStart } Seconds"
   end
+
 
   def nil_time(time)
     if time == nil
