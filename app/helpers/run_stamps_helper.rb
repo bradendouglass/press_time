@@ -1,3 +1,5 @@
+require 'time_diff'
+
 module RunStampsHelper
   def time_at(time)
     time = nil_time(time)
@@ -7,9 +9,9 @@ module RunStampsHelper
   def time_diff(stopTime, startTime)
     cleanStart = nil_time(startTime)
     cleanStop = nil_time(stopTime)
-    "#{ cleanStop - cleanStart } Seconds"
+    time_differance = Time.diff(Time.at(cleanStart), Time.at(cleanStop))
+    "#{time_differance[:hour]} Hour(s), #{time_differance[:minute]} Minute(s), and #{time_differance[:second]} Second(s)"
   end
-
 
   def nil_time(time)
     if time == nil

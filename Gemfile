@@ -30,5 +30,6 @@ group :production do
   gem 'pg'
 end
 
+gem 'time_diff'
 gem 'jquery-rails'
 gem 'haml'
